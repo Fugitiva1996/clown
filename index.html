@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>hybrid landscapes</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-sun-sky@3.0.3/dist/aframe-sun-sky.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+   <script src="https://unpkg.com/aframe-mirror-component/dist/aframe-mirror-component.min.js"></script> 
+    <script src="https://unpkg.com/hydra-synth"></script>
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <a-scene
+    id="scene"
+    background="color: #121212"
+    vr-mode-ui="enabled: false"
+    aframe-init=""
+    renderer="colorManagement: true">
+      <!-- <a-entity environment="preset:default; ground:'hills';" ></a-entity> -->
+      <a-assets>
+
+      </a-assets>
+      <a-box geometry="primitive: box; width: 2; height: 2; depth: 1" position="0 1.5 -3" rotation="0 45 0"></a-box>
+
+  <a-entity light="type: ambient; color: #4fba98" visible=""></a-entity>
+      <a-entity camera="" position="0.18659882660110633 0.75147 10.418014624889018" wasd-controls="" rotation="" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+      <a-asset></a-asset>
+      <a-sky material=""></a-sky>
+    </a-scene>
+  </body>
+</html>
